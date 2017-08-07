@@ -14,7 +14,20 @@ class Rect {
 		return this.height * this.width;
 	}
 
+	isSquare() {
+		return this.height == this.width;
+	}
+
+	toStr() {
+		if (this.isSquare()) {
+			return "Square";
+		} else {
+			return "Rectangle";
+		}
+	}
+
 }
 
 
 module.exports = Rect;
+
