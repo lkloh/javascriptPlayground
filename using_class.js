@@ -55,8 +55,7 @@ function test_fake_function_call() {
 	const Rect = require('./rectangle.js');
 	const assert = require('assert');
 
-	var fakeToStr = sinon.stub();
-	fakeToStr.returns("Rectangle"); // fake return value
+	var fakeToStr = sinon.stub().returns("Rectangle"); // fake return value
 	assert.deepEqual(fakeToStr(), "Rectangle");
 }
 
