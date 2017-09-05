@@ -4,7 +4,8 @@
   "description": "",
   "main": "test.js",
   "scripts": {
-    "test": "mocha"
+    "tests-with-good-description": "mocha",
+    "tests-with-bad-description": "mocha"
   },
   "author": "LK Loh",
   "license": "ISC"
