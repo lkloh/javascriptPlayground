@@ -6,3 +6,9 @@ to see an example of well-named tests, type
 `npm run-script tests-with-good-description`.
 To see an example of badly-named tests, type
 `npm run-script tests-with-bad-description`.
+
+Type `npm run-script tests-with-bdd-description` for the bdd test.
+
+# Dependencies
+
+[mocha](https://mochajs.org/)

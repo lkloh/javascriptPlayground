@@ -4,9 +4,13 @@
   "description": "",
   "main": "test.js",
   "scripts": {
+    "tests-with-bdd-description": "mocha test_good.js",
     "tests-with-good-description": "mocha test_good.js",
     "tests-with-bad-description": "mocha test_bad.js"
   },
   "author": "LK Loh",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^3.5.0"
+  }
 }
