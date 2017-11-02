@@ -27,19 +27,54 @@ class Parent {
 
 }
 
-class Child extends Parent {
+class ChildForeverRich extends Parent {
 
 	constructor(firstname, lastname, age, bankBalance) {
 		super(firstname, lastname, age, bankBalance);
 	}
 
 	goShopping(itemValue) {
-		var originalAge = this.age;
+		var FOREVER_RICH = 1000;
 		Parent.prototype.goShopping.call(this, itemValue);
-		this.age = originalAge;
+		this.bankBalance = FOREVER_RICH;
 	}
 }
 
-alice = new Child('Alice', 'Anderson', 21, 100);
-alice.goShopping(10);
+class ChildNotSoRich extends Parent {
+
+	constructor(firstname, lastname, age, bankBalance) {
+		super(firstname, lastname, age, bankBalance);
+	}
+
+	goShopping(itemValue) {
+		var FOREVER_RICH = 1000;
+		this.bankBalance = FOREVER_RICH;
+		Parent.prototype.goShopping.call(this, itemValue);
+	}
+}
+
+
+
+alice = new ChildForeverRich('Alice', 'ForeverRich', 21, 100);
+bob = new ChildNotSoRich('Bob', 'NotSoRich', 21, 100);
+
+console.log('\nBEFORE');
 console.log(alice);
+console.log(bob);
+
+alice.goShopping(10);
+bob.goShopping(10);
+
+console.log('\nAFTER');
+console.log(alice);
+console.log(bob);
+
+
+
+
+
+
+
+
+
+
