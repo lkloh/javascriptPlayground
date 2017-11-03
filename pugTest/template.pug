@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+	head
+		title= pageTitle
+		script(type='text/javascript').
+			var testVariable = true;
+			var helloWorld = '*** Hello World, I am a variable! ***'
+	body
+		h1 Pug Variable demo
+		.container
+			if testVariable
+				.found Here is your lovely variable: helloWorld
+			else
+				.not_found Could not print test variable
