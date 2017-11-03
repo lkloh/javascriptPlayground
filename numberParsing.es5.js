@@ -1,4 +1,4 @@
-
+// Given a string (from an input field taking only numbers, convert to an integer). Throw error otherwise.
 
 function convertToPositiveNumber(number) {
 	var n = parseInt(number);
