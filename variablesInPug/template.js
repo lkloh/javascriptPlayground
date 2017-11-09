@@ -1,0 +1,1 @@
+function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cp\u003EYOLOSWAG\u003C\u002Fp\u003E";;return pug_html;}

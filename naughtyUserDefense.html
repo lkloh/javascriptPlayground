@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> 
+	Defense against naughty users
+</title>
+</head>
+
+<body>
+	<h1> Only integers between 0 - 5 are allowed </h1>
+
+	<h2> You can enter anything you like! </h2>
+	<input placeholder="Enter a number between 0 and 5">
+
+	<h2> You can only scroll between 0 - 5, but can type negative numbers in </h2>
+	<input type="number" placeholder="Enter a number between 0 and 5" , min=0, max=5>
+
+	<h2> No typing negative numbers! </h2>
+	<input type="number" placeholder="Enter a number between 0 and 5" , min=0, max=5, onkeypress="return event.charCode >= 48">
+
+	<h2> No copying and pasting </h2>
+	<input type="number" placeholder="Enter a number between 0 and 5" , min=0, max=5, onkeypress="return event.charCode >= 48", onpaste="return false;">
+
+
+</body>
+
+</html>
