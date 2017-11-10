@@ -19,6 +19,7 @@ $(document).ready(function() {
     $('#show_two_months').datepicker({
     	defaultDate: '+1m',
     	numberOfMonths: 2,
+        showCurrentAtPos: 1,
     });
 
 });
