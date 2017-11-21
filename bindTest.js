@@ -12,6 +12,5 @@ console.log(rachel);
 //bind
 var getRachelFee = getMonthlyFee.bind(rachel, 90);
 //deduct
-getRachelFee();//Rachel Green remaining balance:410
-getRachelFee();//Rachel Green remaining balance:320
-console.log(rachel);
+console.log(getRachelFee());
+console.log(getRachelFee());
