@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+  		<meta charset='UTF-8'>
+    	<title>Getting Started</title>
+    	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    	<script type="text/javascript">
+    		var dom_nodes = $($.parseHTML('<div><input type="text" value="val" /></div>'));
+			console.log( dom_nodes.find('input').val() );
+
+			var test = $($.parseHTML('<html><head></head><body>the_body</body></html>'));
+			console.log(test[0].data);
+    	</script>
+  	</head>
+
+  	<body>
+  		<h1>Test parses</h1>
+
+  	</body>
+</html>
+
+
+
+
+
