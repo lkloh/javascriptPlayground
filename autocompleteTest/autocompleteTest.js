@@ -25,8 +25,9 @@ $(document).ready(function() {
       "Scala",
       "Scheme"
     ];
-    $( "#tags" ).autocomplete({
-      source: availableTags
-    });
+
+    var myIframe = document.getElementById('my_iframe').contentWindow.document;
+    myIframe.open();
+    myIframe.write('<html><head></head><body>input: <input> </body></html>');
 
 });
