@@ -26,8 +26,16 @@ $(document).ready(function() {
       "Scheme"
     ];
 
+    $('#normal_autocomplete').autocomplete({
+        source: availableTags
+    });
+
     var myIframe = document.getElementById('my_iframe').contentWindow.document;
     myIframe.open();
-    myIframe.write('<html><head></head><body>input: <input> </body></html>');
+    myIframe.write('<html><head></head><body>input: <input id="input_autocomplete"> </body></html>');
+
+    $('#input_autocomplete').autocomplete({
+        source: availableTags
+    });
 
 });
