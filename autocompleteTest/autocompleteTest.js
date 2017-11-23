@@ -30,12 +30,21 @@ $(document).ready(function() {
         source: availableTags
     });
 
-    var myIframe = document.getElementById('my_iframe').contentWindow.document;
+    var myIframe = document.getElementById('disfunctional_iframe').contentWindow.document;
     myIframe.open();
-    myIframe.write('<html><head></head><body>input: <input id="input_autocomplete"> </body></html>');
+    myIframe.write('<html><head></head><body>Disfunctional: <input id="disfunctional_autocomplete"> </body></html>');
+    $('#disfunctional_autocomplete').autocomplete({source: availableTags});
 
-    $('#input_autocomplete').autocomplete({
-        source: availableTags
-    });
+    var workingIframe = document.getElementById('working_iframe').contentWindow.document;
+    workingIframe.open();
+    workingIframe.write(
+    '<html>' +
+        '<head>' + 
+            '<script src="./external/jquery/jquery.js"></script>' +
+            '<script src="./jquery-ui.min.js"></script>' +
+        '</head>' +
+        '<body> Working: <input id="working_autocomplete"> </body>' + 
+    '</html>');
+
 
 });
