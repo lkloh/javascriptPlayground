@@ -8,10 +8,9 @@
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     	<script type="text/javascript">
     		var dom_nodes = $($.parseHTML('<div><input type="text" value="val" /></div>'));
-			console.log( dom_nodes.find('input').val() );
+			   console.log( dom_nodes.find('input').val() );
 
-			var test = $($.parseHTML('<html><head></head><body>the_body</body></html>'));
-			console.log(test[0].data);
+			   console.log(jQuery('<html><head>the_head</head><body>the_body</body></html>').text());
     	</script>
   	</head>
 
