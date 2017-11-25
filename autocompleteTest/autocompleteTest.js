@@ -50,7 +50,7 @@ $(document).ready(function() {
     '</html>');
     workingIframe.close();
 
-    var $html = "<html><head id='myhead'><title>titleTest</title></head><body class='my_awesome_body'><a href='test0'>test01</a><a href='test1'>test02</a><a href='test2'>test03</a></body></html>";
+    var $html = "<html><head id='myhead'><title class='title_class'>titleTest</title></head><body class='my_awesome_body'><a href='test0'>test01</a><a href='test1'>test02</a><a href='test2'>test03</a></body></html>";
     var re_head = new RegExp("<head[^>]*>\s*((?:.|\n)*?)</head>", "i");
     var re_body = new RegExp("<body[^>]*>(.*?|\n)<\/body>", "i");
     console.log(re_head.exec($html)[1]);
