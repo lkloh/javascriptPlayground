@@ -1,4 +1,5 @@
-// https://stackoverflow.com/questions/5000415/call-a-function-after-previous-function-is-complete
+// https://stackoverflow.com/questions/30364849/run-next-function-after-settimeout-done
+
 
 function firstFunction() {
 	return new Promise(function(resolve, reject) {
