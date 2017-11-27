@@ -1,7 +1,11 @@
 
 var not_map = {foo: 'foo', bar: 'bar'};
 console.log(not_map);
+console.log(not_map.foo ? 'present' : 'not_present');
+console.log(not_map.not_present ? 'present' : 'not_present');
 // console.log(not_map.get('foo'));
+
+console.log();
 
 var map = new Map();
 map.set('foo', 'foo');
