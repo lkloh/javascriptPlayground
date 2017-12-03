@@ -1,9 +1,5 @@
 
-/* - '' -> null
- +    // - null -> null
- +    // - 0 -> 0
- +    // - '0' -> 0
- */
+
 const assert = require('assert');
 
 function myParsedNum(potentialNumber) {
