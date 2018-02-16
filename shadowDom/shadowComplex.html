@@ -1,0 +1,42 @@
+<!-- tutorial: https://www.html5rocks.com/en/tutorials/webcomponents/shadowdom/ -->
+
+<html>
+<head>
+<script>
+var host = document.querySelector('button');
+var root = host.createShadowRoot();
+root.textContext = 'Chinese New Year is Feb 16, 2018!';
+</script>
+
+<style>
+.outer {
+  border: 2px solid brown;
+  border-radius: 1em;
+  background: red;
+  font-size: 20pt;
+  width: 12em;
+  height: 7em;
+  text-align: center;
+}
+.boilerplate {
+  color: white;
+  font-family: sans-serif;
+  padding: 0.5em;
+}
+.name {
+  color: black;
+  background: white;
+  font-family: "Marker Felt", cursive;
+  font-size: 45pt;
+  padding-top: 0.2em;
+}
+</style>
+</head>
+
+<body>
+<div class='outer'>
+  <div class='boilerplate'> My name is </div>
+  <div class='name'> Bob </div>
+</div>
+</body>
+</html>
