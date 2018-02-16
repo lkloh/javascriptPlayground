@@ -1,0 +1,15 @@
+<!-- tutorial: https://www.html5rocks.com/en/tutorials/webcomponents/shadowdom/ -->
+
+<html>
+<head>
+<script>
+var host = document.querySelector('button');
+var root = host.createShadowRoot();
+root.textContext = 'Chinese New Year is Feb 16, 2018!';
+</script>
+</head>
+
+<body>
+<button>Hello world!</button>
+</body>
+</html>
