@@ -3,8 +3,11 @@
 <head>
 <script>
 window.onload = function() {
-  var root = document.getElementById('welcome_msg').createShadowRoot();
+  var host = document.getElementById('welcome_msg');
+  var root = host.createShadowRoot();
   root.textContent = 'Hi Shadow';
+  
+  console.error(host.textContent);
 };
 </script>
 </head>
