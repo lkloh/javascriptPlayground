@@ -1,0 +1,26 @@
+<html>
+<head>
+<script>
+  window.onload = function() {
+    var root = document.querySelector('#shadow_host').createShadowRoot();
+    root.innerHTML = '<h3>Shadow Header not affected by normal styles.</h3>';
+  };
+</script>
+
+<style>
+  h3 {
+    color: red;
+  }
+</style>
+</head>
+
+<body>
+  <div id='shadow_host'>
+    <h3> Red header <h3>
+  </div>
+  <div id='normal'>
+    <h3> Normal </h3>
+  </div>
+</body>
+</html>
+
