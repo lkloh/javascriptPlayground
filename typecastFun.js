@@ -30,3 +30,4 @@ function strict_filter_for_three(dict) {
 
 console.log(`Loose filter: num values equal to three ${loose_filter_for_three(mixed_type)}`);
 console.log(`Strict filter: num values equal to three ${strict_filter_for_three(mixed_type)}`);
+
