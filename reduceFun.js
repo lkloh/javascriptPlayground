@@ -48,6 +48,16 @@ function flatten(nestedArray) {
   }, []);
 }
 
+function getUniqueColors(data) {
+  return data.reduce((uniqueColors, dict) => {
+    dict.c.forEach(color => {
+      if (!uniqueColors.includes(color)) {
+        uniqueColors.push(color);
+      }
+    });
+    return uniqueColors;
+  }, []);
+}
 
 console.log(`sum by reduce: ${sumByReduce([1, 2, 3, 4, 5])}`);
 console.log(`sum by reduce with seed: ${sumByReduceSeed([1, 2, 3, 4, 5])}`);
@@ -63,3 +73,11 @@ console.log(talliedFruits);
 
 const nestedArray = [[1,2,3], [4,5], [], [6,7], [8,9,10,11]];
 console.log(flatten(nestedArray));
+
+const data = [
+  {a: 'happy', b: 'robin', c: ['blue','green']}, 
+  {a: 'tired', b: 'panther', c: ['green','black','orange','blue']}, 
+  {a: 'sad', b: 'goldfish', c: ['green','red']},
+];
+console.log(getUniqueColors(data));
+
