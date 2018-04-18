@@ -1,8 +1,7 @@
-const moment = require(`moment`);
 const performance = require(`performance-now`);
 
 function formatUsingMoment(dateStr) {
-
+  const moment = require(`moment`);
   const date = moment(dateStr);
   return date.format(`YYYY-MM-DD`);
 }
