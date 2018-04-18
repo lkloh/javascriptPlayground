@@ -1,5 +1,4 @@
-
-let performance = require("performance-now")
+const performance = require("performance-now")
 
 function doPush(sz) {
   const arr = [];
@@ -18,14 +17,14 @@ function doConcat(sz) {
 }
 
 function measureFunc(func, funcArgs) {
-  let start = performance();
+  const start = performance();
   func(funcArgs);
-  let end = performance();
+  const end = performance();
   console.log(`${func.name} took ` + (end - start) + ` to run`);
 }
 
 const ARR_SIZE = 10000;
-measureFunc(doPush, 1000);
-measureFunc(doConcat, 1000);
+measureFunc(doPush, ARR_SIZE);
+measureFunc(doConcat, ARR_SIZE);
 
 
