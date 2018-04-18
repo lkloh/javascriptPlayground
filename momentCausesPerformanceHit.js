@@ -11,7 +11,7 @@ function measureWithOrWithout(useMoment) {
 
   let v = null;
   for (let i = 0; i < 10000; i++) {
-    v = formatUsingMoment(`2009-05-25T12:34:59`);
+    v = formatUsingMoment(i % 2 === 0 ? `2009-05-25T12:34:59` : `2018-04-18T11:17:23`);
   }
 
   const end = performance();
