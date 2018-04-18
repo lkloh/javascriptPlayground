@@ -6,6 +6,15 @@ function causesOverflow() {
   return arr;
 }
 
+function noOverflow() {
+  const arr = [];
+  for (let i = 0; i < 200000; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
+
+noOverflow();
 causesOverflow();
 
 
