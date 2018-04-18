@@ -1,19 +1,16 @@
 const performance = require("performance-now")
 
 function doPush(sz) {
-  const arr = [];
-  for (let i = 0; i < sz; i++) {
-    arr.push(i * i);
-  }
-  return arr;
+  const arr1 = new Array(sz).fill(1);
+  const arr2 = new Array(sz).fill(2);
+  arr1.push(...arr2);
+  return arr1;
 }
 
 function doConcat(sz) {
-  let arr = [];
-  for (let i = 0; i < sz; i++) {
-    arr = arr.concat([i * i]);
-  }
-  return arr;
+  const arr1 = new Array(sz).fill(1);
+  const arr2 = new Array(sz).fill(2);
+  return arr1.concat(arr2);
 }
 
 function measureFunc(func, funcArgs) {
