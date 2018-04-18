@@ -24,7 +24,8 @@ function measureFunc(func, funcArgs) {
   console.log(`${func.name} took ` + (end - start) + ` to run`);
 }
 
-measureFunc(doPush, 100000);
-measureFunc(doConcat, 100000);
+const ARR_SIZE = 10000;
+measureFunc(doPush, 1000);
+measureFunc(doConcat, 1000);
 
 
