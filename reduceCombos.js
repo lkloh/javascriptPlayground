@@ -25,13 +25,22 @@ const d = {
         'chicago': 49,
       },
       'canada': {
-        'toronto': 49,
+        'toronto': 56,
         'waterloo': 23,
       },
     },
   },
 };
 
+function getCounts(d, depth) {
+  for (key in d) {
+    
+  }
+}
 
-console.log(d);
+const emptyArr = Array(5);
+console.log(emptyArr);
+
+const depth = 4;
+console.log(getCounts(d, depth));
 

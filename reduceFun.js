@@ -81,3 +81,6 @@ const data = [
 ];
 console.log(getUniqueColors(data));
 
+console.log(u'string' === 'string');
+
+
