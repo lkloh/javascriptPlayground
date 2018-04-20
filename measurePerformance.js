@@ -15,7 +15,7 @@ function doConcat(sz) {
 
 function measureFunc(func, funcArgs) {
   const start = performance();
-  func(funcArgs);
+  const arr = func(funcArgs);
   const end = performance();
   console.log(`${func.name} took ` + (end - start) + ` to run`);
 }
